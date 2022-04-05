@@ -1,0 +1,41 @@
+# java-oops-
+
+import java.lang.*;
+class Circle
+{
+    public double radius;
+    
+    public double area()
+    {
+        return Math.PI*radius*radius;
+    }
+    
+    public double perimetere ()
+    {
+        return 2*Math.PI*radius;
+    }
+    public double circumference()
+    {
+        return perimetere();
+    }
+    
+}
+public class Main
+{
+    public static void main(String args[])
+    {
+        Circle c1=new Circle();
+        Circle c2=new Circle();
+        
+        c1.radius=7;
+        c2.radius=10;
+        
+        System.out.println("area"+c1.area());
+        System.out.println("perimetere"+c1.perimetere());
+        System.out.println("circumference"+c1.circumference());
+        
+        System.out.println("area C2 "+c2.area());
+        System.out.println("perimetere C2 "+c2.perimetere());
+        System.out.println("circumference C2 "+c2.circumference());
+    }
+}
