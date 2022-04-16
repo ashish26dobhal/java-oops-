@@ -1,0 +1,56 @@
+import java.lang.*;
+
+class Circle
+{
+    public double radius ;
+    
+    public double area()
+    
+    {
+        return Math.PI*radius*radius;
+    }
+    
+    public double perimeter()
+    {
+        return 2*Math.PI*radius*radius;
+    }
+    
+    public Circle()
+    {
+        radius=0;
+    }
+    
+}
+
+class Cylinder extends Circle
+{
+    public double height;
+    
+   
+    public double volume()
+    {
+        return Math.PI*radius*radius*height;
+    }
+     public Cylinder()
+    {
+        height = 0;
+    }
+    
+}
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+      
+        Cylinder c1=new Cylinder();
+        
+        c1.radius=5;
+        c1.height=2;
+        
+        System.out.println("area"+c1.area());
+        System.out.println("volume"+c1.volume());
+        System.out.println("perimeter"+c1.perimeter());
+        
+    }
+}
